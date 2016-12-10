@@ -19,12 +19,30 @@ p {
    Media Queries
    ========================================================================== */
 
+/*
+examples and what they mean
+
+@media screen and (min-width: 330px) { ... }
+If [device width] is greater than or equal to [330px], then do....
+
+@media only screen and (max-width: 330px)  {...}
+If [device width] is less than or equal to [330px], then do {...}
+
+
+*/
+
+/* If device width is < or = to 768px and
+   if device width is > or = to 481px then do ...   */
+
 @media screen and (max-width: 768px) and (min-width: 481px) {
 	body {
 		background: #FF6347;
 		color: #FFF;
 	}
 }
+
+/* If device width is < or = to 480px then do ... */
+
  @media screen and (max-width: 480px) {
  	body {
  		background: #4682B4;
